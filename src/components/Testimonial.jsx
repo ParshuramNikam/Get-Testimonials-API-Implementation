@@ -4,7 +4,7 @@ const Testimonial = () => {
     const [testimonialData, setTestimonialData] = useState([]);
 
     useEffect(() => {
-        fetch("http://gettestimonials.herokuapp.com/api")
+        fetch("https://gettestimonials.herokuapp.com/api")
             .then((res) => res.json())
             .then((data) => {
                 setTestimonialData(data);
